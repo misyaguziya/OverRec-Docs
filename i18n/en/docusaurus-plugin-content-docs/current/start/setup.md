@@ -17,7 +17,7 @@ OverRec works OBS through OBS's WebSocket feature. Turn it on once in OBS.
 1. Open **"Tools"** in OBS Studio's menu.
 2. Choose **"WebSocket Server Settings"**.
 
-   ![OBS's menu: WebSocket Server Settings is at the bottom of Tools (shown in Japanese)](../img/obs-menu.png)
+   ![OBS's menu: WebSocket Server Settings is at the bottom of Tools](../img/obs-menu.png)
 
 3. Check **"Enable WebSocket server"**. Leave "Enable Authentication" on.
 4. Press **"Apply"**.
