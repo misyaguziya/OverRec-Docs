@@ -1,0 +1,106 @@
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
+
+// ダウンロード先。OverRec の商品ページができたら、その URL に変える (OverRec 本体の main.rs の "booth" も同じ URL に)
+const BOOTH = 'https://misyaguziya.booth.pm/items/9175989';
+const ISSUES = 'https://github.com/misyaguziya/OverRec-Docs/issues';
+
+const config: Config = {
+  title: 'Docs | OverRec',
+  tagline: 'VR の中から OBS Studio を操作する手首パネル',
+  favicon: 'img/favicon.ico',
+  future: {v4: true},
+
+  url: 'https://misyaguziya.github.io',
+  baseUrl: '/OverRec-Docs/',
+  organizationName: 'misyaguziya',
+  projectName: 'OverRec-Docs',
+  onBrokenLinks: 'throw',
+
+  // 日本語が元。英語は i18n/en/ に訳と英語の画面の画像を置く (`npm run write-translations -- --locale en` で文言の雛形)
+  i18n: {
+    defaultLocale: 'ja',
+    locales: ['ja', 'en'],
+    localeConfigs: {ja: {label: '日本語', htmlLang: 'ja'}, en: {label: 'English', htmlLang: 'en'}},
+  },
+
+  presets: [
+    [
+      'classic',
+      {
+        // トップページもドキュメントにする (docs/index.mdx が "/")
+        // docs/ は最新の OverRec に合わせる。前の版を残したくなったら `npm run docusaurus docs:version <x.y.z>`
+        docs: {routeBasePath: '/', sidebarPath: './sidebars.ts'},
+        // 版ごとの変更点 (OverRec の設定画面の「更新内容」から開く)。新しい版は blog/ と i18n/en/docusaurus-plugin-content-blog/ に同じ名前で書き、
+        // static/latest.json の version を上げる (BOOTH に上げてから。OverRec はこの版を見て更新を知らせる)
+        blog: {
+          showReadingTime: false,
+          feedOptions: {type: ['rss', 'atom'], xslt: true},
+          onUntruncatedBlogPosts: 'warn',
+        },
+        theme: {customCss: './src/css/custom.css'},
+      } satisfies Preset.Options,
+    ],
+  ],
+
+  // 画像を押すと拡大 (スマホでパネルの字を読めるように)
+  plugins: ['docusaurus-plugin-image-zoom'],
+  clientModules: ['./src/clientModules/openImageOnPhone.js'],
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {hashed: true, language: ['ja', 'en'], docsRouteBasePath: '/', indexBlog: false, indexPages: false},
+    ],
+  ],
+
+  themeConfig: {
+    colorMode: {respectPrefersColorScheme: true},
+    zoom: {
+      selector: '.markdown img',
+      background: {light: 'rgba(255, 255, 255, 0.96)', dark: 'rgba(18, 20, 18, 0.96)'},
+    },
+    // ページ間の移動はサイドバーに任せ、上はブログと検索とサイトの外へのリンクだけ
+    navbar: {
+      title: 'OverRec',
+      logo: {alt: 'OverRec', src: 'img/icon.png'},
+      items: [
+        {to: '/blog', label: 'ブログ', position: 'left'},
+        {type: 'search', position: 'right'},
+        {type: 'localeDropdown', position: 'right'},
+        {href: BOOTH, label: 'ダウンロード', position: 'right'},
+        {href: ISSUES, label: '不具合・要望', position: 'right'},
+      ],
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'ドキュメント',
+          items: [
+            {label: 'はじめに', to: '/start'},
+            {label: 'パネルのボタン', to: '/panel'},
+            {label: 'OBS の画面のプレビュー', to: '/preview'},
+            {label: '好みに合わせる', to: '/customize'},
+            {label: '設定の一覧', to: '/settings'},
+            {label: 'FAQ', to: '/faq'},
+          ],
+        },
+        {
+          title: 'サポート',
+          items: [
+            {label: 'ダウンロード (BOOTH)', href: BOOTH},
+            {label: '不具合・要望 (GitHub Issues)', href: ISSUES},
+            {label: 'ブログ (変更点)', to: '/blog'},
+          ],
+        },
+        {
+          title: 'Community',
+          items: [{label: 'X', href: 'https://x.com/misya_ai'}],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} m's software. 本サイトの文章・画像の無断転載・転用を禁じます。`,
+    },
+  } satisfies Preset.ThemeConfig,
+};
+
+export default config;

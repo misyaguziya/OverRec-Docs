@@ -1,0 +1,44 @@
+{
+  "link.title.ドキュメント": {
+    "message": "Docs"
+  },
+  "link.title.サポート": {
+    "message": "Support"
+  },
+  "link.title.Community": {
+    "message": "Community"
+  },
+  "link.item.label.はじめに": {
+    "message": "Getting started"
+  },
+  "link.item.label.パネルのボタン": {
+    "message": "The panel's buttons"
+  },
+  "link.item.label.好みに合わせる": {
+    "message": "Customizing"
+  },
+  "link.item.label.設定の一覧": {
+    "message": "Settings"
+  },
+  "link.item.label.FAQ": {
+    "message": "FAQ"
+  },
+  "link.item.label.ダウンロード (BOOTH)": {
+    "message": "Download (BOOTH)"
+  },
+  "link.item.label.不具合・要望 (GitHub Issues)": {
+    "message": "Bugs & requests (GitHub Issues)"
+  },
+  "link.item.label.X": {
+    "message": "X"
+  },
+  "link.item.label.ブログ (変更点)": {
+    "message": "Blog (what's new)"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 m's software. Unauthorized reproduction or reuse of the text and images on this site is prohibited."
+  },
+  "link.item.label.OBS の画面のプレビュー": {
+    "message": "The OBS preview"
+  }
+}

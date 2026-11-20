@@ -1,0 +1,112 @@
+/* OverRec 本体のアクセント (ライム #C8F03C) に揃える。
+   ライトは白地で本文の基準 (4.5:1) を満たすよう暗いオリーブ (#4a6500 は約 6.6:1) */
+:root {
+  --ifm-color-primary: #4a6500;
+  --ifm-color-primary-dark: #435b00;
+  --ifm-color-primary-darker: #3f5600;
+  --ifm-color-primary-darkest: #344700;
+  --ifm-color-primary-light: #516f00;
+  --ifm-color-primary-lighter: #557400;
+  --ifm-color-primary-lightest: #608300;
+  --shot-bg: #121412;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #c8f03c;
+  --ifm-color-primary-dark: #c0ee22;
+  --ifm-color-primary-darker: #bbec15;
+  --ifm-color-primary-darkest: #9bc410;
+  --ifm-color-primary-light: #d0f256;
+  --ifm-color-primary-lighter: #d5f463;
+  --ifm-color-primary-lightest: #e1f78a;
+}
+
+/* スクリーンショット: 角を丸め、縁を付ける。読み込み中も白い枠にならないよう画面と同じ暗い背景 */
+.markdown img {
+  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background-color: var(--shot-bg);
+  margin: 0.5rem 0 1.25rem;
+}
+
+/* 動画: 16:9 で本文の幅いっぱい */
+.video {
+  aspect-ratio: 16 / 9;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* 表は本文の幅いっぱいに揃える */
+.markdown table {
+  display: table;
+  width: 100%;
+}
+
+/* 版のバッジ: 見出しより目立たないよう、縁だけにする */
+.theme-doc-version-badge {
+  background: transparent;
+  color: var(--ifm-color-emphasis-700);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-weight: 500;
+}
+
+/* トップ: 入口のボタンと目的別のカード */
+.home-lead {
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
+}
+
+.home-actions .button {
+  flex: 1 1 12rem;
+  max-width: 18rem;
+}
+
+[data-theme='dark'] .home-actions .button--primary {
+  color: #1a2200;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+
+.home-card {
+  display: block;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  color: inherit;
+}
+
+.home-card:hover {
+  border-color: var(--ifm-color-primary);
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-card strong {
+  display: block;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.home-card span {
+  font-size: 0.9rem;
+  color: var(--ifm-color-emphasis-700);
+}

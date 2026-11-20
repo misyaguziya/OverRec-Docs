@@ -1,0 +1,17 @@
+{
+  "version.label": {
+    "message": "Next"
+  },
+  "sidebar.Sidebar.category.はじめに": {
+    "message": "Getting started"
+  },
+  "sidebar.Sidebar.category.はじめに.link.generated-index.description": {
+    "message": "From installing OverRec to showing the panel in VR and pressing it. Follow the pages in order."
+  },
+  "sidebar.Sidebar.category.設定の一覧": {
+    "message": "Settings"
+  },
+  "sidebar.Sidebar.category.設定の一覧.link.generated-index.description": {
+    "message": "Settings are in two places: the window on the PC (the desktop) and the gear on the panel in VR. Items with the same name are the same setting, wherever you change them."
+  }
+}

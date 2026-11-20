@@ -1,0 +1,17 @@
+{
+  "title": {
+    "message": "OverRec"
+  },
+  "logo.alt": {
+    "message": "OverRec"
+  },
+  "item.label.ダウンロード": {
+    "message": "Download"
+  },
+  "item.label.不具合・要望": {
+    "message": "Bugs & requests"
+  },
+  "item.label.ブログ": {
+    "message": "Blog"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "label": "設定の一覧",
+  "position": 6,
+  "link": {
+    "type": "generated-index",
+    "slug": "/settings",
+    "description": "設定は 2 か所にあります。PC の画面（デスクトップ）と、VR の中のパネルの歯車です。同じ名前の項目は、どちらで変えても同じ設定です。"
+  }
+}
