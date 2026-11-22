@@ -42,7 +42,7 @@ Switching between the panel and the small sign leaves the preview out.
 - OBS's **current scene** (what goes into the recording or the stream). Switch scenes and the preview changes too.
 - It works without recording or streaming.
 - It is for checking, so it is not smooth (it updates from a few to a dozen or so times a second). There is no sound.
-- The preview is only for looking: it cannot be pointed at and pressed.
+- The preview is only for looking: pressing it does nothing. A **dot** shows where you are pointing, so the handle that puts it away is easy to aim at.
 
 ## Where it appears, and its size {#place}
 

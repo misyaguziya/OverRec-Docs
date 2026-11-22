@@ -60,6 +60,10 @@ Pressed while recording, it marks that moment (a chapter), which makes scenes ea
 
 Whether chapters are available is shown in "OBS" → "Chapters" in the PC settings window.
 
+## Sources and filters {#sources}
+
+The handle on the panel's bottom edge brings out the sources drawer. It shows or hides the current scene's sources and turns their filters on or off. [Turning sources and filters on and off](/sources) explains it in full.
+
 ## Log and settings {#menus}
 
 There are three buttons at the top right of the panel. Point at one and its name appears.
