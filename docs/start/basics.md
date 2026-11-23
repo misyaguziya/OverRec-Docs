@@ -6,7 +6,7 @@ description: 手首のパネルを出す、押す、つかむ。VR の中での�
 
 # 基本の操作
 
-SteamVR、OBS Studio、OverRec を起動しておきます。PC の設定画面の右下で、**OBS** が「接続中」、**SteamVR** が「連携中」になっていれば準備ができています。
+SteamVR、OBS Studio、OverRec を起動しておきます。PC の設定画面の右下で、**OBS** が「接続済み」、**SteamVR** が「連携中」になっていれば準備ができています。
 
 ## パネルを出す {#show}
 

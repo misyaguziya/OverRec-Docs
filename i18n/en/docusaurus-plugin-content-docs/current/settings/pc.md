@@ -26,6 +26,7 @@ Switches and choices are **saved as soon as you change them**. Only "Connection"
 | Shown | Meaning |
 |---|---|
 | OBS **Connected** (blue dot) | OBS is connected and can be worked from the panel |
+| OBS **Connecting…** (yellow dot) | It is trying to connect to OBS. In a few seconds this turns to "Connected" or "Not connected" |
 | OBS **Not connected** | OBS is not running, or the connection settings do not match ([It does not connect to OBS](/faq#no-obs)) |
 | SteamVR **Linked** (blue dot) | SteamVR is running and the panel can appear on your wrist |
 | SteamVR **Not running** | SteamVR is not running. Start it and this turns to "Linked" in a few seconds |
@@ -91,7 +92,7 @@ How to reach OBS. Enter what OBS's "Tools" → "WebSocket Server Settings" shows
 | Clear saved password | Removes the saved password (when you turned authentication off in OBS, say) |
 | Save and reconnect | Saves what is entered and connects to OBS again |
 
-The result is shown beside the buttons. The password is kept in Windows Credential Manager.
+The result is shown beside the buttons. With "Save and reconnect", "Saved. Connecting…" is followed by "Connected" or the reason it could not connect. The password is kept in Windows Credential Manager.
 
 :::note
 OBS on another PC works too, but the connection is not encrypted. Using it on the same PC is recommended.
