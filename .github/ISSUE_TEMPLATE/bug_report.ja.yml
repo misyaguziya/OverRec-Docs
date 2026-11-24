@@ -1,0 +1,97 @@
+name: 不具合の報告
+description: OverRec が思ったとおりに動かないとき（日本語）
+labels: [bug, "lang:ja", needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        先に [FAQ](https://misyaguziya.github.io/OverRec-Docs/faq) で同じ症状がないか確認してください。
+
+        **ここは公開の場所です。** Windows のユーザー名、Steam や VRChat の名前、ユーザー名を含むフォルダーのパス、
+        メールアドレス、BOOTH の注文番号は書かないでください。ログやスクリーンショットに写っていたら、消してから添付してください。
+        脆弱性（セキュリティ上の問題）はここに書かず、[非公開で報告](https://github.com/misyaguziya/OverRec-Docs/security/advisories/new)してください。
+
+        対応環境：Windows 10 / 11、SteamVR 経由の VR のみ、OBS Studio 28 以降。
+  - type: input
+    id: version
+    attributes:
+      label: OverRec のバージョン
+      description: PC の設定画面の左下
+      placeholder: v1.1.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      options:
+        - Windows 11
+        - Windows 10
+        - その他（対応外です）
+    validations:
+      required: true
+  - type: input
+    id: steamvr
+    attributes:
+      label: SteamVR のバージョン
+      description: 分かる範囲で
+  - type: input
+    id: device
+    attributes:
+      label: 使っている VR 機器とつなぎ方
+      description: ヘッドセットとコントローラー、PC との接続方法
+      placeholder: 例 Valve Index、Quest 3（Virtual Desktop）
+    validations:
+      required: true
+  - type: input
+    id: obs
+    attributes:
+      label: OBS Studio のバージョン
+      placeholder: 例 31.0.2
+  - type: textarea
+    id: steps
+    attributes:
+      label: 行った操作
+      description: 起きるまでの操作を順に
+      placeholder: |
+        1. 手首のパネルを出す
+        2. 「リプレイ保存」を押す
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した動作
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際に起きたこと
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 起きる頻度
+      options:
+        - 毎回
+        - 時々
+        - 1 回だけ
+        - 分からない
+  - type: textarea
+    id: attachments
+    attributes:
+      label: ログ・スクリーンショット（任意）
+      description: |
+        長いログは本文に貼らず、ファイルをこの欄にドラッグして添付してください。
+        ログは「困ったとき」→「設定フォルダー」→「フォルダーを開く」で開いたフォルダーの `error.log` です。
+        添付する前に、ユーザー名やパスが入っていないか確認してください。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 個人情報の確認
+      options:
+        - label: Windows のユーザー名、Steam や VRChat の名前、フルパス、BOOTH の注文番号などの個人情報を、本文と添付ファイルから消しました。
+          required: true
