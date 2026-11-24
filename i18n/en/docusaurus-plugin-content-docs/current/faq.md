@@ -71,7 +71,7 @@ Turn it off in SteamVR's settings under "Startup / Shutdown".
 
 ## Bug reports and requests {#report}
 
-They are taken on [GitHub Issues](https://github.com/misyaguziya/OverRec-Docs/issues). Choose "Bug report" or "Feature request".
+They are taken on [GitHub Issues](https://github.com/misyaguziya/OverRec-Docs/issues/new/choose). Choose "Bug report" or "Feature request".
 
 Please add these to a bug report:
 

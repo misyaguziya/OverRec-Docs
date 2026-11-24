@@ -3,7 +3,7 @@
 OverRec（VR の中から OBS Studio を操作する手首パネル）の利用者向けドキュメントです。
 https://misyaguziya.github.io/OverRec-Docs/
 
-OverRec の不具合の報告・要望は、このリポジトリの [Issues](https://github.com/misyaguziya/OverRec-Docs/issues) で受け付けています。
+OverRec の不具合の報告・要望は、このリポジトリの [Issues](https://github.com/misyaguziya/OverRec-Docs/issues/new/choose) で受け付けています。
 
 ## ビルド
 

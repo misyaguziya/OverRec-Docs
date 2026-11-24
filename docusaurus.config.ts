@@ -3,7 +3,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // ダウンロード先。OverRec の商品ページができたら、その URL に変える (OverRec 本体の main.rs の "booth" も同じ URL に)
 const BOOTH = 'https://misyaguziya.booth.pm/items/9175989';
-const ISSUES = 'https://github.com/misyaguziya/OverRec-Docs/issues';
+const ISSUES = 'https://github.com/misyaguziya/OverRec-Docs/issues/new/choose';
 
 const config: Config = {
   title: 'Docs | OverRec',

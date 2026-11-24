@@ -71,7 +71,7 @@ SteamVR の設定の「スタートアップ / シャットダウン」から、
 
 ## 不具合の報告・要望 {#report}
 
-[GitHub の Issues](https://github.com/misyaguziya/OverRec-Docs/issues) で受け付けています。「不具合の報告」か「要望」を選んでください。
+[GitHub の Issues](https://github.com/misyaguziya/OverRec-Docs/issues/new/choose) で受け付けています。「不具合の報告」か「要望」を選んでください。
 
 不具合の報告には、次の内容を添えてください。
 
