@@ -14,6 +14,19 @@ description: うまく動かないときの確かめ方と、不具合の報告�
 - 動かしたあとで見失ったときは、PC の設定画面の「VR操作」→ **「手首に戻す」** を押します。
 - パネルを小さくしていると、[小さな表示](/customize#mini) だけが出ます。指して押すと元に戻ります。
 - SteamVR を通さない遊び方（VDXR や Meta の OpenXR ランタイム）では利用できません。
+- ログに「Shared IPC Namespace Unavailable (310)」と出るときは、[管理者として動いているアプリがあります](#admin)。
+
+## SteamVR を起動しているのに「未起動」のまま（エラー 310） {#admin}
+
+ログに `SteamVR 未接続: Shared IPC Namespace Unavailable (310)` と出るときは、OverRec と SteamVR の片方だけが「管理者として実行」で動いています。
+Windows は、管理者として動くアプリと普通に動くアプリのあいだのやり取りを止めるため、OverRec が SteamVR につながれません。
+
+すべてを普通の権限で動かします。
+
+1. OverRec、SteamVR、SteamVR を起動するアプリ（Virtual Desktop Streamer など）を右クリック →「プロパティ」→「互換性」で、**「管理者としてこのプログラムを実行する」** のチェックを外します。
+2. PC を起動し直し、いつもの手順で SteamVR を起動してから、OverRec を起動します。
+
+今どちらで動いているかは、タスクマネージャーの「詳細」タブで確かめられます。列の見出しを右クリック →「列の選択」→ **「管理者特権」** を表示し、`OverRec.exe` と `vrserver.exe` がどちらも「いいえ」なら揃っています。
 
 ## OBS につながらない {#no-obs}
 

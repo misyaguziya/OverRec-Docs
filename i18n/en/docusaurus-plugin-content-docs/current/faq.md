@@ -14,6 +14,19 @@ description: What to check when something does not work, and how to report a bug
 - If you lost it after moving it, press **"Back to wrist"** in "VR controls" in the PC settings window.
 - With the panel made small, only [the small sign](/customize#mini) appears. Point at it and press to bring the panel back.
 - It does not work when you play without SteamVR (VDXR or Meta's OpenXR runtime).
+- If the log says "Shared IPC Namespace Unavailable (310)", [an app is running as administrator](#admin).
+
+## SteamVR is running, but it stays "Not running" (error 310) {#admin}
+
+When the log says `Not connected to SteamVR: Shared IPC Namespace Unavailable (310)`, only one of OverRec and SteamVR is running as administrator.
+Windows keeps apps running as administrator and ordinary apps from talking to each other, so OverRec cannot connect to SteamVR.
+
+Run them all without administrator rights.
+
+1. Right-click OverRec, SteamVR and the app that starts SteamVR (Virtual Desktop Streamer and so on) → "Properties" → "Compatibility", and uncheck **"Run this program as an administrator"**.
+2. Restart the PC, start SteamVR the usual way, then start OverRec.
+
+Task Manager shows how they are running. In the "Details" tab, right-click a column heading → "Select columns" → **"Elevated"**. When both `OverRec.exe` and `vrserver.exe` say "No", they match.
 
 ## It does not connect to OBS {#no-obs}
 
