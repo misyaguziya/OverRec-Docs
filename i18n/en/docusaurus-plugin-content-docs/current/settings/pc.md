@@ -14,7 +14,7 @@ When OverRec starts, its settings window appears on the desktop. The connection 
 
 | Where | What it is |
 |---|---|
-| The left column | The kinds of settings (tabs): **General, Connection, OBS, VR controls, Troubleshooting** |
+| The left column | The kinds of settings (tabs): **General, Connection, OBS, VR controls, Troubleshooting** (without "OBS" when the recorder is NVIDIA App) |
 | The wide area on the right | The chosen tab's items. With many items, scroll up and down |
 | Bottom left | OverRec's version |
 | Bottom right | The state of **OBS** and **SteamVR**. Always shown, on every tab |
@@ -28,6 +28,7 @@ Switches and choices are **saved as soon as you change them**. Only "Connection"
 | OBS **Connected** (blue dot) | OBS is connected and can be worked from the panel |
 | OBS **Connecting…** (yellow dot) | It is trying to connect to OBS. In a few seconds this turns to "Connected" or "Not connected" |
 | OBS **Not connected** | OBS is not running, or the connection settings do not match ([It does not connect to OBS](/faq#no-obs)) |
+| OBS **Not used (NVIDIA App)** | The recorder is NVIDIA App, so OverRec does not connect to OBS ([Recording with NVIDIA App](/nvidia)) |
 | SteamVR **Linked** (blue dot) | SteamVR is running and the panel can appear on your wrist |
 | SteamVR **Not running** | SteamVR is not running. Start it and this turns to "Linked" in a few seconds |
 
@@ -76,9 +77,14 @@ The display language, and how OverRec starts and quits (pictured in [Reading the
 
 ## Connection {#connection}
 
-How to reach OBS. Enter what OBS's "Tools" → "WebSocket Server Settings" shows ([Connect to OBS](/start/setup#connect)).
+The recorder OverRec works, and how to reach OBS.
 
 ![The settings window's "Connection"](../img/settings-connection.png)
+
+Under **Recorder**, choose what the wrist panel and the controllers work. It is **OBS** at first.
+With **NVIDIA App**, the section below shows NVIDIA App's hotkeys instead ([Recording with NVIDIA App](/nvidia)).
+
+Under **OBS WebSocket**, enter what OBS's "Tools" → "WebSocket Server Settings" shows ([Connect to OBS](/start/setup#connect)).
 
 | Item | What it does |
 |---|---|
@@ -155,8 +161,8 @@ On the first start, and when you press "Show the guide", the settings window tur
 
 ![The first screen of the first-run guide](../img/settings-guide.png)
 
-- The left column turns into the five steps. The current step is marked, and finished steps get a tick.
+- The left column turns into the six steps (three when the recorder is NVIDIA App: the OBS steps are skipped). The current step is marked, and finished steps get a tick.
 - Go on with "Back" and "Next" at the bottom. "Done" on the last step goes back to the settings.
-- The display language can be changed at the top of the first screen.
+- On the first screen, choose the display language and the recorder.
 
 What each step does is explained in [First-time setup](/start/setup).

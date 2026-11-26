@@ -10,6 +10,8 @@ description: How to use the record, stream, save replay, screenshot, scene, chap
 
 The top row shows whether OBS is connected ("OBS connected" or "OBS not connected"). While OBS is not connected, the buttons below cannot be pressed.
 
+When the recorder is NVIDIA App, there are three buttons: record, save replay and screenshot ([Recording with NVIDIA App](/nvidia#panel)).
+
 ## Save replay {#replay}
 
 **Saves the last few tens of seconds as a video.** Press it when you want to keep what just happened.

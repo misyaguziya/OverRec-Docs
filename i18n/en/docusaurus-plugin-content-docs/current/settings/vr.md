@@ -12,7 +12,7 @@ In VR, press **⚙** at the top right of the panel. "＜" at the top left goes b
 
 | Item | What it does |
 |---|---|
-| OBS connection | Whether it is connected, and to where. "Reconnect" connects again |
+| Recorder | Whether OBS is connected, and to where. ⟳ (Reconnect) connects again. **OBS / NVIDIA** switches the recorder OverRec works ([Recording with NVIDIA App](/nvidia)) |
 | Start the replay buffer on launch | The same item as in [the PC's "OBS"](/settings/pc#obs) |
 | Haptic feedback | The same item as in [the PC's "VR controls"](/settings/pc#vr) |
 | Worn on | The hand the panel is on (Left / Right). Changed only here ([Which hand](/customize#hand)) |

@@ -6,11 +6,22 @@ description: Set up OBS and SteamVR by following the first-run guide.
 
 # First-time setup
 
-The first time OverRec starts, the **first-run guide** opens. It has five steps and takes about five minutes at the PC.
+The first time OverRec starts, the **first-run guide** opens. It has six steps and takes about five minutes at the PC.
 
 To do it again later, open it from "Troubleshooting" → "Show the guide" in the settings window.
 
-## 1. Turn on OBS's WebSocket {#websocket}
+## 1. Language and recorder {#recorder}
+
+Choose the display language, and the recorder OverRec works.
+
+![The first screen of the first-run guide](../img/settings-guide.png)
+
+- **OBS**: OverRec works OBS Studio. The next steps get OBS ready.
+- **NVIDIA App**: OverRec works NVIDIA App's recording through its hotkeys. The OBS steps (2 to 4) are skipped, and the guide goes on to [SteamVR](#steamvr). To get NVIDIA App ready, see [Recording with NVIDIA App](/nvidia#prepare).
+
+You can change it later in "Connection" in the settings window.
+
+## 2. Turn on OBS's WebSocket {#websocket}
 
 OverRec works OBS through OBS's WebSocket feature. Turn it on once in OBS.
 
@@ -24,7 +35,7 @@ OverRec works OBS through OBS's WebSocket feature. Turn it on once in OBS.
 
    ![OBS's WebSocket Server Settings](../img/obs-websocket.png)
 
-## 2. Connect to OBS {#connect}
+## 3. Connect to OBS {#connect}
 
 Enter what the same "WebSocket Server Settings" window shows into OverRec.
 
@@ -36,7 +47,7 @@ Enter what the same "WebSocket Server Settings" window shows into OverRec.
 
 "Next" tries the connection before going on. If it cannot connect, the reason is shown there.
 
-## 3. Replay and mic {#replay}
+## 4. Replay and mic {#replay}
 
 - **Replay buffer**: the OBS feature behind "save the last few tens of seconds". Choose a length (30 s, 60 s or 120 s) and press **"Set up in OBS"**. It changes OBS's output settings, so press once more to go ahead.
 - **Mic input**: the OBS audio input that the panel's mic button mutes.
@@ -45,14 +56,14 @@ Enter what the same "WebSocket Server Settings" window shows into OverRec.
 If saving a replay does not work after "Set up in OBS", restart OBS.
 :::
 
-## 4. SteamVR {#steamvr}
+## 5. SteamVR {#steamvr}
 
 - **Start with SteamVR**: when on, OverRec starts when SteamVR does.
 - **Controller bindings**: the buttons used without opening the panel ([Controller bindings](/customize#bindings)). You can set them later too.
 
 This step can be set while SteamVR is running. If it is not, skip it and change it later in "General".
 
-## 5. Using it in VR
+## 6. Using it in VR
 
 Last, the guide shows how to use OverRec in VR. "Done" turns the window into the settings.
 
